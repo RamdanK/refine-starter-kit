@@ -1,5 +1,5 @@
-import { Create, useForm } from "@refinedev/antd";
-import { Form, Input } from "antd";
+import { Create, useForm } from '@refinedev/antd';
+import { Form, Input } from 'antd';
 
 export const CategoryCreate = () => {
   const { formProps, saveButtonProps } = useForm({});
@@ -8,12 +8,12 @@ export const CategoryCreate = () => {
     <Create saveButtonProps={saveButtonProps}>
       <Form {...formProps} layout="vertical">
         <Form.Item
-          label={"Title"}
-          name={["title"]}
+          label={'Title'}
+          name={['title']}
           rules={[
             {
-              required: true,
-            },
+              required: true
+            }
           ]}
         >
           <Input />
